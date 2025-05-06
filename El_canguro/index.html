@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Canguro - Productos de Aseo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>El Canguro</h1>
+            <p>Productos para el Aseo</p>
+        </div>
+    </header>
+
+    <nav class="social-links">
+        <a href="https://wa.me/573232117606" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="mailto:correo@ejemplo.com">Correo</a>
+    </nav>
+
+    <section class="products-section">
+        <h2>Nuestros Productos</h2>
+        <div class="products-grid">
+            <!-- Aquí puedes copiar y pegar bloques como este -->
+            <div class="product-card animate-on-scroll">
+                <img src="assets/img/producto1.jpg" alt="Nombre del producto">
+                <h3>Nombre del Producto</h3>
+                <p>Descripción breve del producto.</p>
+            </div>
+            <!-- Repetir para los 25 productos -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 El Canguro - Todos los derechos reservados</p>
+    </footer>
+
+    <a href="https://wa.me/573232117606" class="whatsapp-button" target="_blank">
+        💬
+    </a>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
