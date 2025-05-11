@@ -1,71 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Canguro - Productos de Aseo</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Productos de Aseo El canguro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
-
 <body>
     <header>
         <div class="container">
-            <h1>El Canguro</h1>
-            <p>Productos para el Aseo</p>
+            <div class="logo">
+                <img src="./assets/img/LOGO EL CANGURO.jpg" alt="" width="150rem">
+                <!-- <h1>El Canguro</h1>
+                <p>Productos para el aseo</p> -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
-    <nav class="social-links">
-        <a href="https://wa.me/573232117606" target="_blank">WhatsApp</a>
-        <a href="https://instagram.com/" target="_blank">Instagram</a>
-        <a href="mailto:infoelcanguro@gmail.com">Correo</a>
-    </nav>
-
-    <section class="products-section">
-        <h2>Nuestros Productos</h2>
-        <div class="products-grid">
-            <!-- Aquí puedes copiar y pegar bloques como este -->
-            <div class="product-card animate-on-scroll">
-                <img src="assets/img/LOGO EL CANGURO.jpg" alt="Logo">
-                <h3>Nombre del Producto</h3>
-                <p>Descripción breve del producto.</p>
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>El canguro</h2>
+                <p>Productos resistentes y de alta calidad</p>
+                <a href="#productos" class="btn">Ver Productos</a>
             </div>
-            <!-- Aquí puedes copiar y pegar bloques como este -->
-            <div class="product-card animate-on-scroll">
-                <img src="assets/img/Bolsa Industrial.jpg" alt="Nombre del producto">
-                <h3> Bolsa tipo Industrial </h3>
-                <p>Medidas: 1 metro x 1.25 metros </p> <br>
-                <p> Calibre 2 </p><br>
-                <p> Paca X30 Paquetes X6 unidades </p><br>
-                <p> Capasidad: 25 kilos</p>
-            </div>
-            <!-- Repetir para los 25 productos -->
         </div>
     </section>
 
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="./assets/img/Bolsa Industrial.jpg" alt="Bolsa Industrial">
+                    <h3>Bolsa tipo Industrial</h3>
+                    <p>Bolsa industrial 1 metro X 1.25 metros <br> Bolsa calibre tipo 2 <br> Capacidad de 25 kilos <br>
+                        Presentacion: Paca X30 paquetes X6 bolsas.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="./assets/img/Bolsa AA.jpg" alt="Bolsa tipo AA">
+                    <h3>Bolsa tipo AA</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, iusto.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="./assets/img/Bolsa A.jpg" alt="Bolsa tipo A">
+                    <h3>Bolsa tipo A</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, et.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="./assets/img/Bolsa B.jpg" alt="Bolsa tipo B">
+                    <h3>Bolsa tipo B</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ut?.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="nosotros-content">
+                <div class="nosotros-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, a. Quos, sed. Delectus rem, consectetur, ipsa sit omnis quidem excepturi aperiam ipsum dignissimos quos deleniti fugiat repellendus. Corrupti, nobis laborum?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem assumenda accusamus excepturi error, ex dolorum inventore eligendi odit voluptatibus aliquam illo tempora veniam consequuntur.</p>
+                </div>
+                <div class="nosotros-image">
+                    <img src="./assets/img/LOGO EL CANGURO.jpg" alt="Nuestro equipo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="ubicacion" class="ubicacion">
+    <div class="container">
+        <h2 class="section-title">Nuestra Ubicación</h2>
+        <div class="ubicacion-content">
+            <div class="mapa">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.090557033237!2d-74.20916982524811!3d4.577755942711584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fdad6ad2057%3A0x8fff483a8aee7a62!2sCl.%2025a%20%235-66%2C%20Soacha%2C%20Cundinamarca!5e0!3m2!1ses-419!2sco!4v1746941978810!5m2!1ses-419!2sco" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="direccion">
+                <h3>Encuéntranos en:</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@ecolimpio.com</p>
+                <p><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 - 18:00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contacto" class="contacto">
+    <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <!-- <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form> -->
+
+        <!-- Redes sociales -->
+        <div class="social-links">
+            <a href="https://wa.me/573232117606" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/tucanguro" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/tucanguro" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:contacto@tucanguro.com" target="_blank" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Vincula el SDK de EmailJS -->
+<!-- <script type="text/javascript">
+    (function(){
+        emailjs.init("Qbs770avkd_JEzy7v"); // Tu User ID de EmailJS
+
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault();
+
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            var mensaje = document.getElementById("mensaje").value;
+
+            // Reemplaza con tu Service ID y Template ID
+            emailjs.send("service_58xpjpn", "template_fuvzyw2", {
+                nombre: nombre,
+                email: email,
+                mensaje: mensaje
+            }).then(function(response) {
+                alert('Mensaje enviado con éxito!');
+            }, function(error) {
+                console.log('Error al enviar el mensaje:', error);
+                alert('Hubo un error al enviar el mensaje.');
+            });
+        });
+    })();
+</script> -->
+
+
     <footer>
-        <p>&copy; 2025 El Canguro - Todos los derechos reservados</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>EcoLimpio</h2>
+                    <p>Productos de aseo ecológicos</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://wa.me/573232117606" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:contacto@tucanguro.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoLimpio. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
 
-    <a href="https://wa.me/573232117606" class="whatsapp-button" target="_blank">
-        💬
-    </a>
-
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-    </script>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
