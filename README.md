@@ -34,7 +34,7 @@ Sitio web estático para la empresa **El Canguro**, dedicada a la venta de produ
 3. En **Source**, selecciona la rama `main` y carpeta `/root` (si el HTML está en la raíz).
 4. Guarda y espera unos segundos.
 5. Tu sitio estará disponible en:  
-   `https://tu-usuario.github.io/nombre-del-repo/`
+   `https://github.com/wayucitoxxx/El_canguro/`
 
 ---
 

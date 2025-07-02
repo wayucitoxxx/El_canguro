@@ -91,7 +91,30 @@ ul {
 
 .btn:hover {
   background-color: var(--primary-dark);
+  color: var(--white);
   transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.btn-mas {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.btn-mas:hover {
+  background-color: var(--white);
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
   box-shadow: var(--shadow);
 }
 
@@ -529,6 +552,19 @@ footer {
   .hero h2 {
     font-size: 2rem;
   }
+
+.hero-content {
+  padding: 1rem;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
 
   .footer-content {
     flex-direction: column;
