@@ -96,27 +96,6 @@ ul {
   box-shadow: var(--shadow);
 }
 
-.btn-mas {
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: var(--white);
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  margin-top: 15px;
-  text-align: center;
-}
-
-.btn-mas:hover {
-  background-color: var(--white);
-  color: var(--primary-dark);
-  border-color: var(--primary-dark);
-  box-shadow: var(--shadow);
-}
 
 /* Header */
 header {
@@ -278,6 +257,30 @@ nav ul li a:hover::after {
   color: var(--text-light);
   padding: 0 15px 20px;
 }
+
+.btn-mas {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.btn-mas:hover {
+  background-color: var(--white);
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  box-shadow: var(--shadow);
+}
+
 
 /* Nosotros Section */
 .nosotros {
